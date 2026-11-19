@@ -48,16 +48,35 @@ license</a></p>
 <section id="update-history" class="col-sm-12 col-lg-8">
 <h1>Update history</h1>
 <div class="collapse">
-<input type="checkbox" id="collapse-section1" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<label for="collapse-section2" aria-hidden="true">V2.0.0 /
+19-Nov-2026</label>
+<div>
+<h2 id="main-changes">Main changes</h2>
+<ul>
+<li><p>Fix MISRA issues</p>
+<p><strong>Breaking change: API renaming</strong></p>
+<p>API names have been updated to comply with <strong>MISRA C:2012 Rule
+5.1</strong>, ensuring that external identifiers are distinguishable
+within their first 31 characters.</p>
+<p>This change breaks source and binary compatibility with previous
+driver versions. Applications must update all references to the renamed
+APIs and be rebuilt against the updated driver.</p></li>
+<li><p>Fix timestamp_raw_get() API</p></li>
+<li><p>reviewed indentation and doxygen doc</p></li>
+</ul>
+<h2 id="section"></h2>
+</div>
+<input type="checkbox" id="collapse-section1" aria-hidden="true">
 <label for="collapse-section1" aria-hidden="true">V1.0.0 /
 07-Sep-2026</label>
 <div>
-<h2 id="main-changes">Main changes</h2>
+<h2 id="main-changes-1">Main changes</h2>
 <h3 id="first-release">First release</h3>
 <ul>
 <li>First official release [ref. DS v1.0]</li>
 </ul>
-<h2 id="section"></h2>
+<h2 id="section-1"></h2>
 </div>
 </div>
 </section>
